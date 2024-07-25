@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+.content-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: minmax(20px,50px) minmax(350px,1fr) minmax(800px,1fr) minmax(20px,50px);
+    height: 100vh;
+    width: 100%;
+}
+
+
+#map {
+    grid-column: 3/4;
+    border: 1px solid black;
+    margin-left: 2.5em;
+}
+
+.places{
+    margin-right: 2.5em;
+    grid-column: 2/3;
+}
+
+.add-place {
+    z-index: 1;
+    background-color: grey;
+}
+
+.target-icon {
+    background: none;
+    border: none;
+    font-size: 3em;
+    cursor: pointer;
+    position: absolute;
+    right: 2em;
+    bottom: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+.open-place-btn {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-size: 1em;
+    color: grey;
+}
+
+.place-details-dialog {
+    width: 300px;
+    height: 200px;
+    background-color: rgba(214, 208, 208, 0.9);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    overflow: hidden;
+}
+
+.dialog-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    cursor: pointer;
+    border: none;
+}
+
+.desc {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.inner-header{
+    position: relative;
+    display: flex;
+    height: 100px;
+}
+
+.add-place-btn{
+    position: absolute;
+    right: 0;
+    bottom:0.1px;
+}
+
+.action-btn{
+    background: none;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    color: rgb(56, 55, 55);
+}

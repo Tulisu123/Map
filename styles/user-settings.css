@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    gap: 20px;
+    border: 1px solid black;
+    padding: 20px;
+    align-items: center;
+    margin-top: 5em;
+}
+
+form .form-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    gap: 10px;
+}
+
+.user-settings-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

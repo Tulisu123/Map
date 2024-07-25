@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZsDDBnyvhOiNPxJLCHwyLv29kC46B6ck&callback=initMap"
+        defer></script>
+
+
+</head>
+
+<body onload="onInit()">
+
+    <header class="places-header">
+        <h1 class="headline">Places</h1>
+        <nav>
+            <a href="user-settings.html">User settings</a>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <hr>
+    <div class="content-container">
+        <div class="places">
+            <div class="inner-header">
+                <h1 class="saved-location-title headline">Saved Locations</h1>
+                <button class='add-place-btn classic-button' onclick="openDialog()">Add Place</button>
+                <button class='target-icon' onclick="onLocalPlace()">&target;</button>
+            </div>
+            <hr>
+            <ul class="places-container">
+            </ul>
+        </div>
+        <dialog class="add-place">
+            <form class="add-place-form" onsubmit="onAddPlace(event)">
+                <button type="button" onclick=closeDialog() class="classic-button">X</button>
+                <input class="name-input" type="text" placeholder="Enter Name">
+                <input class="lat-input" step="any" type="number" placeholder="Enter LAT">
+                <input class="lng-input" step="any" type="number" placeholder="Enter LNG">
+                <button class='classic-button'>Add</button>
+            </form>
+        </dialog>
+        <div id="map" style="height: 500px; width: 800px;"></div>
+    </div>
+
+    <script src="utilService.js"></script>
+    <script src="places-controller.js"></script>
+    <script src="placeService.js"></script>
+    <script src="userService.js"></script>
+
+</body>
+
+</html>
