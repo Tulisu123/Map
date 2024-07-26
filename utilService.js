@@ -10,8 +10,9 @@ function getId(length = 4) {
 function saveToLocalStorage(arr){
     for (const key in arr) {
         if (user.hasOwnProperty(key)) {
-            // Save each property in localStorage
             localStorage.setItem(key, user[key])
         }
     }
 }
+
+//save entire object with json parse or json stringfiy

@@ -1,4 +1,3 @@
-'use strict'
 
 var places = getPlaces() //using var beacuse of an error 'cannot access 'places' before initialization'
 
